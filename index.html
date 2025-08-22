@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Trang giới thiệu cá nhân của CodeX - chia sẻ kiến thức và bài viết."
+    />
+    <title>Trang Chủ - CodeX</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="index">
+    <header id="header" class="header dark-background">
+      <div class="business-card">
+        <div class="avatar">
+          <img
+            src="Images/avt.jpg"
+            alt="Ảnh đại diện của CodeX"
+            class="profile-avatar"
+          />
+        </div>
+        <nav id="menu" class="menu">
+          <ul>
+            <li>
+              <a href="index.html" class="menu-item active"
+                ><i class="fas fa-home"></i> Trang Chủ</a
+              >
+            </li>
+            <li>
+              <a href="TrangCaNhan.html" class="menu-item"
+                ><i class="fas fa-user"></i> Trang Cá Nhân</a
+              >
+            </li>
+            <li>
+              <a href="#" class="menu-item"
+                ><i class="fas fa-file-alt"></i> Câu Hỏi</a
+              >
+            </li>
+            <li>
+              <a href="#" class="menu-item"
+                ><i class="fas fa-newspaper"></i> Bài Đăng</a
+              >
+            </li>
+            <li>
+              <a href="#" class="menu-item"
+                ><i class="fas fa-archive"></i> Lưu Trữ</a
+              >
+            </li>
+            <li>
+              <a href="#" class="menu-item"
+                ><i class="fa-solid fa-gear"></i> Tai Khoan</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-skype"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </header>
+    <main>
+      <h1 class="typewriter">
+        <span id="typed-text"></span><span class="cursor"></span>
+      </h1>
+      <div class="status-box">
+        <div class="textarea-wrapper">
+          <textarea placeholder="Bạn muốn chia sẻ gì?"></textarea>
+
+          <!-- Biểu tượng ảnh -->
+          <label for="image-upload" class="upload-icon">
+            <i class="fas fa-image"></i>
+          </label>
+          <input
+            type="file"
+            id="image-upload"
+            class="image-input"
+            accept="image/*"
+            hidden
+          />
+        </div>
+
+        <!-- Ảnh xem trước -->
+        <img
+          class="image-preview"
+          style="max-width: 100%; margin-top: 10px; display: none"
+        />
+        <button class="post-button">Đăng</button>
+      </div>
+
+      <div class="post-list"></div>
+    </main>
+    <footer>
+      <h1 class="friend-list">Danh Sach Ban Be</h1>
+
+      <p class="foot">&copy; 2025 CodeX. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
